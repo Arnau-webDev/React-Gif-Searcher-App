@@ -13,8 +13,6 @@ export const getGifs = async (category) => {
             url: gif.images?.fixed_height.url,
         }
     })
-    console.log(gifs);
-    console.log(data);
 
     return gifs;
 }
