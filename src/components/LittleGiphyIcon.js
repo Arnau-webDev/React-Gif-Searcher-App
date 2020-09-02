@@ -6,11 +6,13 @@ export const LittleGiphyIcon = () => {
 
     return (
         <div>
-            <div className="small animate__animated animate__backInDown">
-                <a href="https://developers.giphy.com/" alt="" target="_blank" rel="noopener noreferrer">
-                    <div>Powered by GIPHY</div>
-                    <div className="extraSmall"><img src={ littleIconUrl } alt=""></img></div>
-                </a>
+            <div className="smallContainer">
+                <div className="small animate__animated animate__backInDown">
+                    <a href="https://developers.giphy.com/" alt="" target="_blank" rel="noopener noreferrer">
+                        <div>Powered by GIPHY</div>
+                        <div className="extraSmall"><img src={ littleIconUrl } alt=""></img></div>
+                    </a>
+                </div>
             </div>
             <h2>Gif Expert App</h2>
         </div>

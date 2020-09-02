@@ -5,6 +5,16 @@ import { EmptyGifGridItem } from './EmptyGifGridItem';
 
 export const GifGrid = ({ category }) => {
 
+    // const categoriesAlreadySearched = document.querySelectorAll("h3");
+
+    //  categoriesAlreadySearched.forEach((element) => {
+    //      console.log(element.innerHTML)
+    //     if(element.innerHTML.toUpperCase() === category.trim().toUpperCase() ){
+    //         return <></>
+    //     }
+        
+    //  }); 
+
     const { data:images, loading, dataLength } = useFetchGifs( category );
 
     return (

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import PropTypes from "prop-types";
 
-export const AddCategory = ({ setCategories }) => {
+export const AddCategory = ({ setCategories, categories }) => {
 
 const [inputValue, setInputValue] = useState("");
 
@@ -12,10 +12,18 @@ const handleInputChange = (e) => {
 const handleSubmit = (e) => {
     e.preventDefault();
 
-    if(inputValue.trim().length > 2) {
+    categories.forEach((element, index) => {
+        if(element.toUpperCase() === inputValue.toUpperCase()) {
+            categories.splice(index, 1);
+        }
+    })
+    
+    if(inputValue.trim().length > 1 && inputValue.trim().length < 35 ) {
         setCategories(( categories ) => [inputValue, ...categories]);
         setInputValue("");
     }
+
+    setInputValue("");
 }
 
     return (

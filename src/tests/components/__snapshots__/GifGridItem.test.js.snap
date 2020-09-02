@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas GifGridItem se muestra el componente correctamente 1`] = `
+<div
+  className="card animate__animated animate__backInLeft"
+>
+  <img
+    alt="baby groot hello GIF"
+    src="https://media0.giphy.com/media/3o7budMRwZvNGJ3pyE/200.gif?cid=6f54fede8s54pr16kgr6lf8j3r09deuycwk3wi9y69gfz6rg&rid=200.gif"
+  />
+  <p>
+    baby groot hello GIF
+  </p>
+</div>
+`;
