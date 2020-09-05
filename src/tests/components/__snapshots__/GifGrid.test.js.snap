@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas <GifGrid /> Debe de mostrar los items despues de la consulta fetch 1`] = `
+<div>
+  <h3
+    className="animate__animated animate__fadeIn"
+  >
+    Goku
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <GifGridItem
+      img={
+        Object {
+          "id": "ABC",
+          "title": "Some title",
+          "url": "https://localhost/myImgae.png",
+        }
+      }
+      key="ABC"
+    />
+  </div>
+</div>
+`;
+
+exports[`Pruebas <GifGrid /> Debe mostrar el contenido correctamente 1`] = `
+<div>
+  <h3
+    className="animate__animated animate__fadeIn"
+  >
+    Goku
+  </h3>
+  <p
+    className="animate__animated animate__flash"
+  >
+    Loading...
+  </p>
+  <div
+    className="card-grid"
+  />
+</div>
+`;
